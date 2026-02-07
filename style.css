@@ -1,0 +1,253 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background: #004080;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero con solo imagen */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: none;
+}
+
+.hero-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Secciones */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section h2 {
+    color: #004080;
+    margin-bottom: 15px;
+}
+
+section p {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #004080;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #003366;
+}
+
+/* Footer */
+footer {
+    background: #004080;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+/* Botón Meet */
+.btn-meet {
+    display: inline-block;
+    background: #ff6600;
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-meet:hover {
+    background: #cc5200;
+}
+
+/* Contenedor Meet y Grabaciones */
+.meet-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.meet-link, .recordings {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.recordings ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recordings li {
+    margin: 10px 0;
+}
+
+.recordings a {
+    color: #004080;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.recordings a:hover {
+    text-decoration: underline;
+}
+
+
+/* Modo oscuro */
+.dark-mode {
+    background-color: #121212;
+    color: #f4f4f4;
+}
+
+.dark-mode header {
+    background: #222;
+    color: #f4f4f4;
+}
+
+.dark-mode nav a {
+    color: #ffcc00;
+}
+
+.dark-mode footer {
+    background: #222;
+    color: #f4f4f4;
+}
+
+.dark-mode .card,
+.dark-mode .meet-link,
+.dark-mode .recordings {
+    background: #1e1e1e;
+    color: #f4f4f4;
+    box-shadow: 0 2px 5px rgba(255,255,255,0.1);
+}
+
+/* Animación de entrada para todo el sitio */
+body {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+/* Cuando la página ya está cargada */
+body.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hero-img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Tablets (pantallas medianas) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .meet-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Celulares (pantallas pequeñas) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    section {
+        padding: 30px 10px;
+    }
+
+    .calendar-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .btn-meet {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Ajuste del botón Meet en móviles */
+@media (max-width: 480px) {
+    .btn-meet {
+        width: 100%;          /* ocupa todo el ancho */
+        text-align: center;   /* centra el texto */
+        font-size: 1em;       /* tamaño de fuente más cómodo */
+        padding: 15px;        /* más espacio para que sea fácil de tocar */
+        margin-top: 10px;     /* separación con otros elementos */
+    }
+
+    .meet-container {
+        flex-direction: column; /* coloca Meet y Grabaciones uno debajo del otro */
+        align-items: center;
+    }
+}

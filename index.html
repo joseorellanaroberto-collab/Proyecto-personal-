@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alianza Internacional de Profesionales</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Icono en la pestaña -->
+    <link rel="icon" type="image/png" href="Logo.png">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Alianza Internacional de Profesionales</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#objetivos">Objetivos</a></li>
+                <li><a href="#calendarizacion">Calendarización</a></li>
+                <li><a href="#diplomados">Diplomados</a></li>
+                <li><a href="#congresos">Congresos</a></li>
+            </ul>
+        </nav>
+       <!-- Botón de modo oscuro/claro -->
+<button id="toggle-theme">🌙 Modo Oscuro</button>
+</header>
+
+<!-- Script para activar modo oscuro -->
+<script>
+    const toggleBtn = document.getElementById("toggle-theme");
+    toggleBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+
+        // Cambiar texto del botón según el modo
+        if (document.body.classList.contains("dark-mode")) {
+            toggleBtn.textContent = "☀️ Modo Claro";
+        } else {
+            toggleBtn.textContent = "🌙 Modo Oscuro";
+        }
+    });
+</script>
+
+
+    <!-- Sección de inicio -->
+    <section id="inicio" class="hero">
+        <img src="images.jpeg" 
+             alt="Alianza Internacional de Profesionales" class="hero-img">
+    </section>
+
+    <!-- Sección nosotros -->
+    <section id="nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos una red institucional internacional conformada por instituciones legalmente constituidas. Opera como una alianza estratégica de instituciones independientes unidas para el diseño, programación, ejecución y proyección internacional de formación continua de alto nivel.</p>
+    </section>
+
+    <!-- Sección Objetivos -->
+    <section id="objetivos">
+        <h2>Objetivo General</h2>
+        <p>Consolidar una red internacional dedicada a la planificación, desarrollo y proyección de formación continua especializada, permitiendo a cada institución miembro comercializar actividades de manera autónoma, generar ingresos propios y fortalecer su posicionamiento.</p>
+
+        <h2>Misión</h2>
+        <p>Promover y ejecutar formación académica continua de alta calidad, impulsando el crecimiento profesional de los participantes y el desarrollo de cada miembro de la Alianza.</p>
+
+        <h2>Visión</h2>
+        <p>Ser una alianza internacional referente en formación continua, reconocida por su estructura, diversidad, alcance y capacidad para generar oportunidades académicas y económicas sostenibles.</p>
+    </section>
+
+    <!-- Sección Calendarización -->
+    <section id="calendarizacion">
+        <h2>Calendarización 2026</h2>
+        <div class="calendar-group">
+            <h3>Grupo 1</h3>
+            <img src="grupo 1.png" alt="Grupo 1" class="calendar-img">
+        </div>
+        <div class="calendar-group">
+            <h3>Grupo 2</h3>
+            <img src="grupo 2.png" alt="Grupo 2" class="calendar-img">
+        </div>
+        <div class="calendar-group">
+            <h3>Grupo 3</h3>
+            <img src="grupo3.png" alt="Grupo 3" class="calendar-img">
+        </div>
+    </section>
+
+    <!-- Sección Diplomados -->
+    <section id="diplomados">
+        <h2>Diplomados</h2>
+        <img src="dipplomados.png" alt="Diplomados" class="calendar-img">
+    </section>
+
+    <!-- Sección Congresos -->
+    <section id="congresos">
+        <h2>Congresos</h2>
+        <img src="congresos.png" alt="Congresos" class="calendar-img">
+    </section>
+
+    <!-- Sección Meet y Grabaciones --> <section id="meet"> <h2>Reuniones y Grabaciones</h2> <div class="meet-container"> <div class="meet-link"> <h3>Acceso a la reunión</h3> <a href="https://meet.google.com/wyn-xcot-vsk" target="_blank" class="btn-meet">Entrar a Google Meet</a> </div> <div class="recordings"> <h3>Grabaciones</h3> <p>grabaciones realizadas.</p> <!-- Espacio para futuras grabaciones --> <ul> <li><a href="#">Grabación 1</a></li> <li><a href="#">Grabación 2</a></li> </ul> </div> </div> </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 ACOES EL SALVADOR.</p>
+    </footer>
+<script>
+    // Espera a que la página cargue y activa la animación
+    window.addEventListener("load", () => {
+        document.body.classList.add("loaded");
+    });
+</script>
+</body>
+</html>
+
+
+
+
